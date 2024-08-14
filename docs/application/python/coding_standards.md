@@ -1,4 +1,4 @@
-# React
+# Python
 
 ## Coding Standards
 
