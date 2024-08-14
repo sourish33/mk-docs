@@ -1,0 +1,69 @@
+site_name: HCA Tools and Technology Standards
+site_url: https://james-willett.github.io/mkdocs-material-youtube-tutorial/
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - toc.integrate
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+  language: en
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+      primary: teal
+      accent: purple
+    - scheme: slate
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode    
+      primary: teal
+      accent: lime
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - admonition
+  - pymdownx.arithmatex:
+      generic: true
+  - footnotes
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.mark
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+
+copyright: |
+  &copy; 2023 <a href="https:www.google.com"  target="_blank" rel="noopener">HCA</a>
+
+nav:
+  - Home: index.md
+  - Application:
+    - React:
+      - Getting Started: application/react/getting_started.md
+      - Coding Standards: application/react/coding_standards.md
+    - Vue:
+      - Getting Started: application/vue/getting_started.md
+      - Coding Standards: application/vue/coding_standards.md
+    - Python:
+      - Getting Started: application/python/getting_started.md
+      - Coding Standards: application/python/coding_standards.md
+  - Database:
+    - CosmoDB:
+      - Getting Started: database/cosmodb/getting_started.md
+      - Coding Standards: database/cosmodb/coding_standards.md
+
+plugins:
+  - search
